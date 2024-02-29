@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw60402myn6k6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_24u05"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.156863, 0.239216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/AspectRatioContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlusLabel" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 111
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/AspectRatioContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EqualsLabel" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_constants/shadow_offset_y = 220
+theme_override_font_sizes/font_size = 111
+text = "="
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AspectRatioContainer3" type="AspectRatioContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/AspectRatioContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="MarginContainer/VBoxContainer/PanelContainer2/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_24u05")
+
+[node name="PanelContainer3" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
